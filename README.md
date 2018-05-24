@@ -1,4 +1,6 @@
-Thid repository contains the hardware design and firmware templates for Celeritous' newest processor module. This board is based on the ST Micro Cortex M3 Low power STM32L151/152 processor line. 
+This repository contains the hardware design and firmware templates for Celeritous' newest processor module. This board is based on the ST Micro Cortex M3 Low power STM32L151/152 processor line. 
+
+The current revision is 1.0 and this is the initial commit for review and comment. 
 
 It is being released as Open Source Hardware under the CERN OSH License ver 1.2
 
