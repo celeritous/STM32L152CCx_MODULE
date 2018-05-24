@@ -1,0 +1,101 @@
+
+(rules PCB STM32L152Cxx_Module
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 838)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.5)
+    )
+    (layer_rule +3.3V
+      (active off)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.5)
+    )
+    (layer_rule GND
+      (active off)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.5)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.4)
+    )
+  )
+  (rule
+    (width 203.2)
+    (clear 178.0)
+    (clear 101.6 (type smd_to_turn_gap))
+    (clear 44.6 (type smd_smd))
+  )
+  (padstack "Via[0-3]_762:406.4_um"
+    (shape
+      (circle F.Cu 762.0 0.0 0.0)
+    )
+    (shape
+      (circle +3.3V 762.0 0.0 0.0)
+    )
+    (shape
+      (circle GND 762.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 762.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-3]_762:406.4_um" "Via[0-3]_762:406.4_um" default
+  )
+  (via 
+    "Via[0-3]_762:406.4_um-kicad_default" "Via[0-3]_762:406.4_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-3]_762:406.4_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-3]_762:406.4_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 203.2)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    +3.3V GND "Net-(C1-Pad1)" /X1 /X3 /~MRST /X2 /X4
+    "/USB_DM" "/USB_DP" "Net-(D2-Pad4)" "Net-(D2-Pad6)" "/+3.3V_OUT" +5V "Net-(J1-Pad4)" /VBAT
+    /PC13 /PA0 /PA1 /PA2 /PA3 /PA4 /PA5 /PA6
+    /PA7 /PB0 /PB1 /PB2 /PB10 /PB11 "/+3.3V_IN" /PB9
+    /PB8 /PB7 /PB6 /PB5 /PB4 /PB3 /PA15 /PA10
+    /PA9 /PA8 /PB15 /PB14 /PB13 /PB12 /SWDIO /SWCLK
+    /BOOT "Net-(D4-PadA)" "Net-(D5-PadA)" "/+3.3V_INT" "Net-(P2-Pad4)" /WP "Net-(D6-Pad2)" "Net-(D6-Pad1)"
+    "Net-(D6-Pad3)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 203.2)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
