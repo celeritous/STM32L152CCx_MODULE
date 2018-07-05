@@ -86,7 +86,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory CAM/))
+      (outputdirectory STM32L152Cxx_CAM/))
   )
 
   (net 0 "")
@@ -922,13 +922,13 @@
     )
   )
 
-  (module Kicad:P1210 (layer B.Cu) (tedit 5B197C0C) (tstamp 5ADF6CF1)
+  (module Kicad:P1210 (layer B.Cu) (tedit 5B340D50) (tstamp 5ADF6CF1)
     (at 54.15 119.55 90)
     (descr P1210)
     (tags CHIP)
     (path /5ADFC441)
     (attr smd)
-    (fp_text reference F2 (at -2.8 0.15 90) (layer B.SilkS)
+    (fp_text reference F2 (at -2.81 -1.17 180) (layer B.SilkS)
       (effects (font (size 0.75 0.75) (thickness 0.1)) (justify mirror))
     )
     (fp_text value FUSE_PTC_.5A_33V (at 0 -2.2 90) (layer B.SilkS) hide
@@ -949,13 +949,13 @@
     )
   )
 
-  (module Kicad:P1210 (layer B.Cu) (tedit 5B197B57) (tstamp 5ADF6CEB)
+  (module Kicad:P1210 (layer B.Cu) (tedit 5B340D28) (tstamp 5ADF6CEB)
     (at 54.8 130.25)
     (descr P1210)
     (tags CHIP)
     (path /5ADFC513)
     (attr smd)
-    (fp_text reference F1 (at 3.175 -0.127) (layer B.SilkS)
+    (fp_text reference F1 (at 2.98 0.86) (layer B.SilkS)
       (effects (font (size 0.75 0.75) (thickness 0.1)) (justify mirror))
     )
     (fp_text value FUSE_PTC_.75A_33V (at 0 -2.2) (layer B.SilkS) hide
@@ -1253,10 +1253,10 @@
       (net 57 /+3.3V_DIR))
   )
 
-  (module Kicad:SWITCH_SPST_3X4MM (layer F.Cu) (tedit 5B070DCC) (tstamp 5AF341C0)
+  (module Kicad:SWITCH_SPST_3X4MM (layer F.Cu) (tedit 5B340C61) (tstamp 5AF341C0)
     (at 99.695 128.905 180)
     (path /5AF358FD)
-    (fp_text reference SW1 (at -1.605 -2.645 180) (layer F.SilkS)
+    (fp_text reference SW1 (at 4.465 -0.005 180) (layer F.SilkS)
       (effects (font (size 0.75 0.75) (thickness 0.1)))
     )
     (fp_text value PUSHBUTTON_SPST_3X4MM (at 0.3 -10.1 180) (layer F.Fab) hide
@@ -1524,10 +1524,10 @@
       (net 2 GND))
   )
 
-  (module Kicad:CAPACITOR_TANTALUM_B (layer B.Cu) (tedit 58E2ABE4) (tstamp 5B1794A3)
+  (module Kicad:CAPACITOR_TANTALUM_B (layer B.Cu) (tedit 5B340D1B) (tstamp 5B1794A3)
     (at 60.95 130.15 180)
     (path /5B1759BE)
-    (fp_text reference C14 (at -0.127 2.413 180) (layer B.SilkS)
+    (fp_text reference C14 (at 1.72 2.64 180) (layer B.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.1)) (justify mirror))
     )
     (fp_text value 33uF (at 6.604 3.683 180) (layer B.Fab) hide
@@ -1570,13 +1570,13 @@
       (net 57 /+3.3V_DIR))
   )
 
-  (module Kicad:P1210 (layer B.Cu) (tedit 5B197C07) (tstamp 5B1794C6)
+  (module Kicad:P1210 (layer B.Cu) (tedit 5B340D42) (tstamp 5B1794C6)
     (at 57.9 119.55 270)
     (descr P1210)
     (tags CHIP)
     (path /5B173B50)
     (attr smd)
-    (fp_text reference F3 (at 2.75 0 270) (layer B.SilkS)
+    (fp_text reference F3 (at 2.86 0.12 360) (layer B.SilkS)
       (effects (font (size 0.65 0.65) (thickness 0.0975)) (justify mirror))
     )
     (fp_text value FUSE_PTC_.5A_33V (at 0 -2.2 270) (layer B.SilkS) hide
@@ -1719,9 +1719,9 @@
     (pad 1 smd circle (at 0 0) (size 2.54 2.54) (layers B.Mask))
   )
 
-  (module Kicad:FIDUCIAL_BOTTOM (layer F.Cu) (tedit 58E2CE65) (tstamp 5B2044EA)
+  (module Kicad:FIDUCIAL_BOTTOM (layer F.Cu) (tedit 5B340CC9) (tstamp 5B2044EA)
     (at 61.38 127.01)
-    (fp_text reference REF** (at 0.7112 -2.0828) (layer F.SilkS)
+    (fp_text reference REF** (at -0.9 -0.55) (layer F.SilkS) hide
       (effects (font (size 0.7 0.7) (thickness 0.1)))
     )
     (fp_text value FIDUCIAL_BOTTOM (at 0.8636 2.1336) (layer F.Fab) hide
@@ -1753,10 +1753,10 @@
   (gr_text "CELERITOUS TECHNICAL SERVICES, CORP.\nCOPYRIGHT 2018 ALL RIGHTS RESERVED\nSTM32L152CCx CORTEX M3 ARM PROCESSOR MODULE\nRELEASED UNDER CERN OSHW VER 1.2" (at 181.35 173.45) (layer B.Fab)
     (effects (font (size 2 2) (thickness 0.3)) (justify left))
   )
-  (gr_text "V\n\nC\n\nG\n\nD" (at 65 120 90) (layer F.SilkS)
+  (gr_text "C\n\nG\n\nD" (at 66.33 120.01 90) (layer F.SilkS)
     (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
-  (gr_text "STM32L152CC REV1" (at 80.45 131.3) (layer F.SilkS)
+  (gr_text "STM32L152CC REV 1.1" (at 83.33 131.485) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_circle (center 80.05 117.8) (end 80.85 117.85) (layer F.SilkS) (width 0.2))
